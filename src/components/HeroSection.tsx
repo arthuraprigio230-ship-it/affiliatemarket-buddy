@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroDashboard from "@/assets/hero-dashboard.png";
+import dashboardScreenshot from "@/assets/dashboard-screenshot.png";
 
 const HeroSection = () => {
   return (
@@ -59,15 +59,28 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="max-w-5xl mx-auto"
+          className="max-w-5xl mx-auto relative"
         >
-          <div className="relative rounded-2xl overflow-hidden border border-border/50 glow">
-            <img
-              src={heroDashboard}
-              alt="Painel de controle Mastery Afiliados"
-              className="w-full h-auto"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+          {/* Purple glow accents */}
+          <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/20 rounded-full blur-[80px] pointer-events-none" />
+          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-[80px] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
+
+          {/* Notebook frame */}
+          <div className="relative mx-auto">
+            {/* Screen */}
+            <div className="relative rounded-t-2xl overflow-hidden border-2 border-primary/30 bg-[#1a1a2e]">
+              <img
+                src={dashboardScreenshot}
+                alt="Painel de controle Mastery Afiliados"
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+            </div>
+            {/* Notebook base */}
+            <div className="relative h-4 bg-gradient-to-b from-[#2a2a3e] to-[#1a1a2e] rounded-b-xl mx-[-2%] border-x-2 border-b-2 border-primary/20">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-primary/30 rounded-b-full" />
+            </div>
           </div>
         </motion.div>
       </div>
