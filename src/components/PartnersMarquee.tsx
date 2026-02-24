@@ -33,7 +33,7 @@ const PartnersMarquee = () => {
         </p>
       </div>
       <div className="overflow-hidden">
-        <div className="flex animate-marquee hover:[animation-play-state:paused] active:[animation-play-state:paused]">
+        <div className="flex animate-marquee-fast md:animate-marquee hover:[animation-play-state:paused] active:[animation-play-state:paused]">
           {[...partners, ...partners, ...partners, ...partners].map((partner, i) => (
             <div
               key={i}
