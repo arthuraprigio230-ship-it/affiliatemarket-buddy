@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <img src={logo} alt="Mastery Afiliados" className="h-8" />
+        <a href="/"><img src={logo} alt="Mastery Afiliados" className="h-8" /></a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <a href="#vantagens" className="text-muted-foreground hover:text-foreground transition-colors">Vantagens</a>
