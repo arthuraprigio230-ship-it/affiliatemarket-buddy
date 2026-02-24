@@ -18,8 +18,8 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="font-heading">Login</Button>
-          <Button size="sm" className="font-heading glow">Cadastrar</Button>
+          <Button variant="ghost" size="sm" className="font-heading" asChild><a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Login</a></Button>
+          <Button size="sm" className="font-heading glow" asChild><a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Cadastrar</a></Button>
         </div>
 
         <button onClick={() => setOpen(!open)} className="md:hidden text-foreground">
@@ -33,8 +33,8 @@ const Navbar = () => {
           <a href="#como-funciona" className="block text-muted-foreground hover:text-foreground">Como Funciona</a>
           <a href="#" className="block text-muted-foreground hover:text-foreground">Contato</a>
           <div className="flex gap-3 pt-2">
-            <Button variant="ghost" size="sm" className="font-heading">Login</Button>
-            <Button size="sm" className="font-heading glow">Cadastrar</Button>
+            <Button variant="ghost" size="sm" className="font-heading" asChild><a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Login</a></Button>
+            <Button size="sm" className="font-heading glow" asChild><a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Cadastrar</a></Button>
           </div>
         </div>
       )}

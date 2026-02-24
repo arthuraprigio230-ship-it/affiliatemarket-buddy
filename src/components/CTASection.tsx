@@ -22,8 +22,8 @@ const CTASection = () => {
             <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10">
               Junte-se a milhares de afiliados que já estão faturando com a Mastery. Cadastro rápido, gratuito e sem burocracia.
             </p>
-            <Button size="lg" className="text-lg px-10 py-6 glow font-heading font-semibold">
-              Começar Gratuitamente <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="text-lg px-10 py-6 glow font-heading font-semibold" asChild>
+              <a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Começar Gratuitamente <ArrowRight className="ml-2 h-5 w-5" /></a>
             </Button>
           </div>
         </motion.div>
