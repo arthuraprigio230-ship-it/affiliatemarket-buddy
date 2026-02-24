@@ -5,7 +5,7 @@ const features = [
   {
     icon: DollarSign,
     title: "Comissões Agressivas",
-    description: "As melhores taxas do mercado com pagamento rápido e transparente.",
+    description: "Os melhores deals do mercado com transparência e pagamento rapido pra sua escala",
   },
   {
     icon: BarChart3,
@@ -20,7 +20,7 @@ const features = [
   {
     icon: Zap,
     title: "Ferramentas de Conversão",
-    description: "Links inteligentes, deeplinks e materiais criativos otimizados.",
+    description: "Campanhas para traqueamento dos resultados, app de sinais gratuito para seus leads",
   },
   {
     icon: Shield,
