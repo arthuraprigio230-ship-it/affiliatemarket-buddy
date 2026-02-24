@@ -47,7 +47,7 @@ const AwardsSection = () => {
         </motion.div>
 
         {/* Award Plaques */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-16">
           {awards.map((award, index) => (
             <motion.div
               key={award.tier}

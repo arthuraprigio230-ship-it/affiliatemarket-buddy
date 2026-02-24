@@ -149,6 +149,19 @@ const About = () => {
               </motion.div>
             ))}
           </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="text-center mt-12"
+          >
+            <Button size="lg" className="text-lg px-10 py-6 glow font-heading font-semibold" asChild>
+              <a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">
+                Comece Agora <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+          </motion.div>
         </div>
       </section>
 
@@ -176,7 +189,7 @@ const About = () => {
                 transition={{ delay: i * 0.15 }}
                 className="text-center relative"
               >
-                <div className="text-6xl font-heading font-bold text-primary/15 mb-4">{step.number}</div>
+                <div className="text-6xl font-heading font-bold text-primary/40 mb-4">{step.number}</div>
                 <h3 className="text-xl font-heading font-semibold mb-2">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
                 {i < steps.length - 1 && (
