@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/mastery_branca.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -8,9 +9,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <span className="text-xl font-heading font-bold">
-          Mastery<span className="text-primary"> Afiliados</span>
-        </span>
+        <img src={logo} alt="Mastery Afiliados" className="h-8" />
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <a href="#vantagens" className="text-muted-foreground hover:text-foreground transition-colors">Vantagens</a>
