@@ -32,7 +32,7 @@ const PartnersMarquee = () => {
           Parceiros e Operadoras
         </p>
       </div>
-      <div className="overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing touch-pan-x">
+      <div className="overflow-hidden">
         <div className="flex animate-marquee hover:[animation-play-state:paused] active:[animation-play-state:paused]">
           {[...partners, ...partners, ...partners, ...partners].map((partner, i) => (
             <div
