@@ -39,11 +39,13 @@ const PartnersMarquee = () => {
               key={i}
               className="mx-8 flex items-center justify-center min-w-[160px]"
             >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
-              />
+              <div className="relative p-4 rounded-xl bg-white/10 backdrop-blur-sm shadow-[0_0_20px_8px_rgba(255,255,255,0.08)] hover:bg-white/15 transition-all duration-300">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
             </div>
           ))}
         </div>
