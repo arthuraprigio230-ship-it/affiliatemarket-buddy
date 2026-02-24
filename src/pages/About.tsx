@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Shield, BarChart3, DollarSign, Users, Target, Briefcase, TrendingUp, CheckCircle2, UsersRound } from "lucide-react";
+import { ArrowRight, MessageCircle, Shield, BarChart3, DollarSign, Users, Target, Briefcase, TrendingUp, CheckCircle2, UsersRound, Network } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -32,6 +32,7 @@ const audiences = [
   { icon: MessageCircle, label: "Donos de grupos Telegram/WhatsApp" },
   { icon: BarChart3, label: "Media buyers" },
   { icon: Briefcase, label: "Operadores de performance" },
+  { icon: Network, label: "Gerentes de rede" },
 ];
 
 function formatNumber(n: number) {
@@ -231,6 +232,33 @@ const About = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Gerentes de Rede CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="mt-10 glass rounded-3xl p-8 md:p-12 text-center relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none" />
+            <div className="relative z-10">
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
+                <Network className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3">
+                É <span className="text-gradient">Gerente de Rede?</span>
+              </h3>
+              <p className="text-muted-foreground max-w-xl mx-auto mb-6 leading-relaxed">
+                Gerencie seus afiliados com estrutura profissional, relatórios detalhados e comissões transparentes. Cadastre-se como gerente e tenha acesso a ferramentas exclusivas para escalar sua rede.
+              </p>
+              <Button size="lg" className="text-lg px-10 py-6 glow font-heading font-semibold" asChild>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpn-ssUJVmWCKH_YDUaVQbvbBHy9apA1ixeM3PgwnOsLKBQg/viewform?usp=sharing&ouid=117827276254814557796" target="_blank" rel="noopener noreferrer">
+                  Cadastrar como Gerente <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
+          </motion.div>
         </div>
       </section>
 
