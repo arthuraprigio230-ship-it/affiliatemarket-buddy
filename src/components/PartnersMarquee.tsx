@@ -42,7 +42,7 @@ const PartnersMarquee = () => {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 brightness-0 invert"
+                className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
