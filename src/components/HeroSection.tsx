@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import dashboardScreenshot from "@/assets/dashboard-screenshot.png";
+import heroDashboard from "@/assets/hero-dashboard.png";
 
 const HeroSection = () => {
   return (
@@ -63,7 +63,7 @@ const HeroSection = () => {
         >
           <div className="relative rounded-2xl overflow-hidden border border-border/50 glow">
             <img
-              src={dashboardScreenshot}
+              src={heroDashboard}
               alt="Painel de controle Mastery Afiliados"
               className="w-full h-auto"
             />
