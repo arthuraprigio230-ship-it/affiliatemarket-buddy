@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { DollarSign, BarChart3, Headphones, Zap, Shield, Users } from "lucide-react";
+import { DollarSign, BarChart3, Headphones, Zap, Shield, Users, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
@@ -70,6 +71,20 @@ const FeaturesSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="text-center mt-12"
+        >
+          <Button size="lg" className="text-lg px-10 py-6 glow font-heading font-semibold" asChild>
+            <a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">
+              Comece Agora <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );
