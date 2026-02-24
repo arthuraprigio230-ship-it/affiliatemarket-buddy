@@ -51,7 +51,7 @@ const StatCard = ({ stat, index }: { stat: typeof stats[0]; index: number }) => 
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="text-center p-6 md:p-8"
     >
-      <span className="block text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-2">
+      <span className="block text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-2 whitespace-nowrap">
         {stat.prefix}{formatNumber(count)}{stat.suffix}
       </span>
       <span className="text-sm md:text-base text-muted-foreground uppercase tracking-wider">{stat.label}</span>
