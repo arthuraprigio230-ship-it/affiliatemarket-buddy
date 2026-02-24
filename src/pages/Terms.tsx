@@ -204,9 +204,6 @@ const Terms = () => {
             </p>
           </Section>
 
-          <div className="mt-12 pt-8 border-t border-border/30 text-center text-muted-foreground text-sm">
-            © 2026 Mastery Afiliados. Todos os direitos reservados.
-          </div>
         </motion.div>
       </main>
       <Footer />
