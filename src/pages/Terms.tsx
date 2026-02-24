@@ -13,9 +13,7 @@ const Terms = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-2">
-            Termo de Uso e Condições Gerais
-            <br />
-            <span className="text-primary">Mastery</span>
+            Termo de Uso e Condições Gerais — <span className="text-primary">Mastery</span>
           </h1>
 
           <p className="text-muted-foreground leading-relaxed mt-6">
