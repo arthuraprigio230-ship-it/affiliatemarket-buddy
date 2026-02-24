@@ -25,7 +25,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
+            className="hidden md:block text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
             A Mastery Afiliados conecta você às melhores operadoras do mercado com as maiores comissões, suporte dedicado e ferramentas que realmente convertem.
           </motion.p>
