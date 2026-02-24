@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Shield, BarChart3, DollarSign, Users, Target, Briefcase, TrendingUp, CheckCircle2 } from "lucide-react";
+import { ArrowRight, MessageCircle, Shield, BarChart3, DollarSign, Users, Target, Briefcase, TrendingUp, CheckCircle2, UsersRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -18,8 +18,8 @@ const features = [
   { icon: DollarSign, title: "Pagamentos estruturados", description: "Receba suas comissões no prazo, com total transparência." },
   { icon: Users, title: "Gestão estratégica de afiliados", description: "Suporte dedicado e gerência personalizada para cada parceiro." },
   { icon: CheckCircle2, title: "Compliance e segurança jurídica", description: "Operação em conformidade com as regulamentações do mercado." },
+  { icon: UsersRound, title: "Comunidade Exclusiva", description: "Networking com os melhores afiliados e acesso a estratégias validadas." },
 ];
-
 const steps = [
   { number: "01", title: "Cadastro na plataforma", description: "Crie sua conta gratuitamente em minutos." },
   { number: "02", title: "Receba seu link exclusivo", description: "Links rastreáveis e personalizados para cada operador." },
