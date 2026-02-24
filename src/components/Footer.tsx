@@ -16,7 +16,7 @@ const Footer = () => {
               <span className="text-foreground font-semibold text-xs uppercase tracking-wider mb-1 sm:hidden">Navegação</span>
               <a href="#vantagens" className="hover:text-primary transition-colors">Vantagens</a>
               <a href="#como-funciona" className="hover:text-primary transition-colors">Como Funciona</a>
-              <a href="#" className="hover:text-primary transition-colors">Contato</a>
+              <a href="/sobre" className="hover:text-primary transition-colors">Sobre Nós</a>
             </nav>
 
             <nav className="flex flex-col sm:flex-row gap-3 sm:gap-6">

@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <a href="#vantagens" className="text-muted-foreground hover:text-foreground transition-colors">Vantagens</a>
           <a href="#como-funciona" className="text-muted-foreground hover:text-foreground transition-colors">Como Funciona</a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contato</a>
+          <a href="/sobre" className="text-muted-foreground hover:text-foreground transition-colors">Sobre Nós</a>
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="md:hidden glass border-t border-border/30 px-4 py-4 space-y-3">
           <a href="#vantagens" className="block text-muted-foreground hover:text-foreground">Vantagens</a>
           <a href="#como-funciona" className="block text-muted-foreground hover:text-foreground">Como Funciona</a>
-          <a href="#" className="block text-muted-foreground hover:text-foreground">Contato</a>
+          <a href="/sobre" className="block text-muted-foreground hover:text-foreground">Sobre Nós</a>
           <div className="flex gap-3 pt-2">
             <Button variant="ghost" size="sm" className="font-heading" asChild><a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Login</a></Button>
             <Button size="sm" className="font-heading glow" asChild><a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Cadastrar</a></Button>
