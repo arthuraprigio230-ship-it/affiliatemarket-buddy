@@ -37,7 +37,7 @@ const HowItWorksSection = () => {
               transition={{ delay: i * 0.15 }}
               className="text-center relative"
             >
-              <div className="text-6xl font-heading font-bold text-primary/15 mb-4">
+              <div className="text-6xl font-heading font-bold text-primary/70 mb-4">
                 {step.number}
               </div>
               <h3 className="text-xl font-heading font-semibold mb-2">{step.title}</h3>
