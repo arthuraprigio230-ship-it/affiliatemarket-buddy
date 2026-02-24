@@ -11,32 +11,42 @@ const faqs = [
   {
     question: "O que é o programa de afiliados Mastery?",
     answer:
-      "A Mastery é uma plataforma de afiliados focada no mercado de iGaming. Conectamos afiliados às maiores operadoras do mercado, oferecendo comissões competitivas, dashboard completo e suporte dedicado.",
+      "A Mastery é uma plataforma de afiliados focada no mercado de iGaming. Conectamos afiliados às maiores operadoras do mercado, oferecendo comissões competitivas, dashboard completo e suporte dedicado. Você recebe um link exclusivo para divulgar e cada jogador que se registra através do seu link fica vinculado à sua conta e gera comissão conforme o modelo contratado (CPA, RevShare ou Híbrido).",
   },
   {
-    question: "Preciso pagar algo para me cadastrar?",
+    question: "O que é considerado conversão saudável?",
     answer:
-      "Não! O cadastro é 100% gratuito. Você não paga nada para se tornar afiliado e já pode começar a gerar receita imediatamente após a aprovação.",
+      "A média de mercado costuma variar entre 15% e 35%. Conversões muito acima desse padrão podem gerar análise manual para garantir conformidade.",
+  },
+  {
+    question: "Posso incentivar depósito oferecendo dinheiro ao jogador?",
+    answer:
+      "Pode variar de acordo com sua estratégia, se o seu lead nunca mais voltar a Operadora pode classificar sua operação como fraude. E deixamos claro que qualquer forma de incentivo financeiro direto ou indireto pode gerar bloqueio na operação.",
+  },
+  {
+    question: "Posso operar com grupo fechado (amigos, conhecidos)?",
+    answer:
+      "Não é recomendado. Perfis concentrados e coordenados aumentam risco de auditoria e bloqueio.",
+  },
+  {
+    question: "O que acontece se a operadora identificar fraude?",
+    answer:
+      "Dependendo da gravidade: Suspensão temporária; Bloqueio de comissão; Encerramento do contrato; Cancelamento retroativo de valores.",
+  },
+  {
+    question: "Como melhorar minha qualidade de tráfego?",
+    answer:
+      "Trabalhar com público real; Evitar promessa de lucro garantido; Não incentivar saque rápido; Focar em retenção; Evitar tráfego comprado não qualificado.",
   },
   {
     question: "Como funciona o pagamento das comissões?",
     answer:
-      "As comissões são pagas mensalmente via PIX ou transferência bancária. Você acompanha todos os seus ganhos em tempo real pelo nosso dashboard.",
-  },
-  {
-    question: "Quais operadoras estão disponíveis?",
-    answer:
-      "Trabalhamos com as maiores operadoras do mercado, incluindo Betano, Sportingbet, SuperBet, Jonbet, Blaze, entre outras. Novas parcerias são adicionadas frequentemente.",
-  },
-  {
-    question: "Preciso ter experiência com marketing digital?",
-    answer:
-      "Não é necessário. Oferecemos treinamentos, materiais de apoio e suporte para que você possa começar mesmo sem experiência prévia no mercado.",
+      "As comissões são pagas via PIX ou Cripto a depender do seu acordo. Você acompanha todos os seus ganhos em tempo real pelo nosso dashboard. (Sua comissão está sujeita a impostos aplicáveis)",
   },
   {
     question: "Como funcionam as premiações por resultado?",
     answer:
-      "Ao atingir marcos de faturamento (100K, 500K, 1M), você recebe placas exclusivas de reconhecimento e brindes como a pulseira Mastery. É a nossa forma de celebrar o seu sucesso.",
+      "Ao atingir marcos de faturamento ou de resultado, você recebe premiações exclusivas de reconhecimento e brindes. É a nossa forma de celebrar o seu sucesso.",
   },
 ];
 
