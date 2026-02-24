@@ -8,6 +8,7 @@ import jonbet from "@/assets/partners/jonbet.png";
 import blaze from "@/assets/partners/blaze.png";
 import betano from "@/assets/partners/betano.avif";
 import zekabet from "@/assets/partners/zekabet.svg";
+import verajohn from "@/assets/partners/vera-and-john.svg";
 
 const partners = [
   { name: "Sportingbet", logo: sportingbet },
@@ -20,6 +21,7 @@ const partners = [
   { name: "Blaze", logo: blaze },
   { name: "Betano", logo: betano },
   { name: "Zekabet", logo: zekabet },
+  { name: "Vera&John", logo: verajohn },
 ];
 
 const PartnersMarquee = () => {
