@@ -39,8 +39,8 @@ const HeroSection = () => {
             <Button size="lg" className="text-lg px-8 py-6 glow font-heading font-semibold" asChild>
               <a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">Comece Agora <ArrowRight className="ml-2 h-5 w-5" /></a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 font-heading font-semibold">
-              Saiba Mais
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 font-heading font-semibold" asChild>
+              <a href="/sobre">Saiba Mais</a>
             </Button>
           </motion.div>
         </div>

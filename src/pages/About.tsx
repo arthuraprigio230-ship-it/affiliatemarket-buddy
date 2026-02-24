@@ -97,7 +97,7 @@ const About = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 font-heading font-semibold" asChild>
-              <a href="https://app.masteryaf.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=5511947714273&text=Vim%20pelo%20site%20e%20gostaria%20de%20me%20tornar%20um%20afiliado%20da%20Mastery." target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" /> Falar com o time
               </a>
             </Button>
