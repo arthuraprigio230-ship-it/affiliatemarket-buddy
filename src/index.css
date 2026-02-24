@@ -15,38 +15,38 @@
     --popover: 240 6% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 145 80% 50%;
-    --primary-foreground: 240 7% 5%;
+    --primary: 270 80% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 5% 14%;
-    --secondary-foreground: 0 0% 85%;
+    --secondary: 270 40% 20%;
+    --secondary-foreground: 270 20% 85%;
 
     --muted: 240 5% 14%;
     --muted-foreground: 240 5% 55%;
 
-    --accent: 145 80% 50%;
-    --accent-foreground: 240 7% 5%;
+    --accent: 270 80% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 240 5% 18%;
     --input: 240 5% 18%;
-    --ring: 145 80% 50%;
+    --ring: 270 80% 60%;
 
     --radius: 0.75rem;
 
-    --glow-primary: 0 0 40px hsl(145 80% 50% / 0.3);
-    --glow-primary-strong: 0 0 80px hsl(145 80% 50% / 0.4);
+    --glow-primary: 0 0 40px hsl(270 80% 60% / 0.3);
+    --glow-primary-strong: 0 0 80px hsl(270 80% 60% / 0.4);
 
     --sidebar-background: 240 7% 5%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 145 80% 50%;
+    --sidebar-primary: 270 80% 60%;
     --sidebar-primary-foreground: 240 7% 5%;
     --sidebar-accent: 240 5% 14%;
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 240 5% 18%;
-    --sidebar-ring: 145 80% 50%;
+    --sidebar-ring: 270 80% 60%;
   }
 }
 
@@ -66,7 +66,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-300;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-300;
   }
 
   .glow {
