@@ -17,7 +17,7 @@ const Footer = () => {
           </nav>
 
           <p className="text-xs text-muted-foreground">
-            © 2025 Mastery Afiliados. Todos os direitos reservados.
+            © 2026 Mastery Afiliados. Todos os direitos reservados.
           </p>
         </div>
       </div>
