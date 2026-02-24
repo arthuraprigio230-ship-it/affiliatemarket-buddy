@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Trophy, Gift } from "lucide-react";
+import { Gift } from "lucide-react";
 import placa100k from "@/assets/awards/placa-100k.webp";
 import placa500k from "@/assets/awards/placa-500k.webp";
 import placa1m from "@/assets/awards/placa-1m.webp";
@@ -46,8 +46,8 @@ const AwardsSection = () => {
           </p>
         </motion.div>
 
-        {/* Award Plaques */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-16">
+        {/* Awards Grid - 2 cols mobile (includes bracelet), 4 cols desktop (plaques only, bracelet below) */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-0 md:mb-16">
           {awards.map((award, index) => (
             <motion.div
               key={award.tier}
@@ -55,30 +55,51 @@ const AwardsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group glass rounded-2xl p-6 text-center hover:border-primary/30 transition-all duration-300"
+              className="group glass rounded-2xl p-4 md:p-6 text-center hover:border-primary/30 transition-all duration-300"
             >
-              <div className="relative overflow-hidden rounded-xl mb-6 aspect-[3/4] bg-background/50">
+              <div className="relative overflow-hidden rounded-xl mb-4 md:mb-6 aspect-[3/4] bg-background/50">
                 <img
                   src={award.image}
                   alt={award.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/15 text-primary mb-3">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/15 text-primary mb-2 md:mb-3">
                 {award.tier}
               </span>
-              <h3 className="text-xl font-bold mb-2">{award.title}</h3>
-              <p className="text-muted-foreground text-sm">{award.description}</p>
+              <h3 className="text-lg md:text-xl font-bold mb-2">{award.title}</h3>
+              <p className="hidden md:block text-muted-foreground text-sm">{award.description}</p>
             </motion.div>
           ))}
+
+          {/* Bracelet card - inside grid on mobile, hidden on desktop */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.45 }}
+            className="md:hidden group glass rounded-2xl p-4 text-center hover:border-primary/30 transition-all duration-300"
+          >
+            <div className="relative overflow-hidden rounded-xl mb-4 aspect-[3/4] bg-background/50">
+              <img
+                src={pulseira}
+                alt="Pulseira Mastery exclusiva"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/15 text-primary mb-2">
+              Exclusivo
+            </span>
+            <h3 className="text-lg font-bold mb-2">Pulseira Mastery</h3>
+          </motion.div>
         </div>
 
-        {/* Bracelet highlight */}
+        {/* Bracelet highlight - desktop only */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass rounded-3xl overflow-hidden"
+          className="hidden md:block glass rounded-3xl overflow-hidden"
         >
           <div className="grid md:grid-cols-2 gap-0">
             <div className="aspect-square md:aspect-auto overflow-hidden">

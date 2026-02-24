@@ -189,7 +189,7 @@ const About = () => {
                 transition={{ delay: i * 0.15 }}
                 className="text-center relative"
               >
-                <div className="text-6xl font-heading font-bold text-primary/40 mb-4">{step.number}</div>
+                <div className="text-6xl font-heading font-bold text-primary/70 mb-4">{step.number}</div>
                 <h3 className="text-xl font-heading font-semibold mb-2">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
                 {i < steps.length - 1 && (
