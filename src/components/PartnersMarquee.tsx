@@ -32,8 +32,8 @@ const PartnersMarquee = () => {
           Parceiros e Operadoras
         </p>
       </div>
-      <div className="overflow-hidden">
-        <div className="flex animate-marquee">
+      <div className="overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing touch-pan-x">
+        <div className="flex animate-marquee hover:[animation-play-state:paused] active:[animation-play-state:paused]">
           {[...partners, ...partners, ...partners, ...partners].map((partner, i) => (
             <div
               key={i}
@@ -42,7 +42,7 @@ const PartnersMarquee = () => {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 pointer-events-none"
               />
             </div>
           ))}

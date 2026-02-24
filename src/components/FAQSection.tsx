@@ -60,10 +60,6 @@ const FAQSection = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 text-sm text-muted-foreground mb-6">
-            <HelpCircle className="h-4 w-4 text-primary" />
-            Dúvidas Frequentes
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Perguntas <span className="text-gradient">Frequentes</span>
           </h2>

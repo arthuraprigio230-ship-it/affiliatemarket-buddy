@@ -38,10 +38,6 @@ const AwardsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 text-sm text-muted-foreground mb-6">
-            <Trophy className="h-4 w-4 text-primary" />
-            Premiações
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Conquistas por <span className="text-gradient">Resultado</span>
           </h2>
