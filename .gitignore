@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Coverage
+coverage/
+
+# Build artifacts
+*.tsbuildinfo
+
+# OS files
+Thumbs.db
+
+# Cache
+.cache/
