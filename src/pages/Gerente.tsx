@@ -133,7 +133,17 @@ const Gerente = () => {
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Stats */}
+      <section className="py-16 border-y border-border/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {stats.map((stat, i) => (
+              <StatCard key={stat.label} stat={stat} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-24">
         <div className="container mx-auto px-4">
           <motion.div
