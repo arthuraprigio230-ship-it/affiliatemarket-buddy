@@ -8,6 +8,7 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Compliance from "./pages/Compliance";
 import About from "./pages/About";
+import Gerente from "./pages/Gerente";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
