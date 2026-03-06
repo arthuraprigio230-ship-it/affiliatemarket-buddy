@@ -3,6 +3,39 @@ import { ArrowRight, Network, Users, TrendingUp, DollarSign, Headphones, BarChar
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useCountUp } from "@/hooks/useCountUp";
+
+const stats = [
+  { value: 180000, suffix: "+", label: "Registros", prefix: "" },
+  { value: 95000, suffix: "+", label: "FTDs", prefix: "" },
+  { value: 86000, suffix: "+", label: "CPAs", prefix: "" },
+  { value: 8500000, suffix: "+", label: "Pagos em Comissões", prefix: "R$ " },
+];
+
+function formatNumber(n: number) {
+  if (n >= 1000000) return (n / 1000000).toFixed(1).replace(".0", "") + "M";
+  if (n >= 1000) return (n / 1000).toFixed(0) + "k";
+  return n.toString();
+}
+
+const StatCard = ({ stat, index }: { stat: typeof stats[0]; index: number }) => {
+  const { count, ref } = useCountUp(stat.value, 2200);
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="text-center p-6 md:p-8"
+    >
+      <span className="block text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-2 whitespace-nowrap">
+        {stat.prefix}{formatNumber(count)}{stat.suffix}
+      </span>
+      <span className="text-sm md:text-base text-muted-foreground uppercase tracking-wider">{stat.label}</span>
+    </motion.div>
+  );
+};
 
 const benefits = [
   {
@@ -100,7 +133,17 @@ const Gerente = () => {
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Stats */}
+      <section className="py-16 border-y border-border/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {stats.map((stat, i) => (
+              <StatCard key={stat.label} stat={stat} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-24">
         <div className="container mx-auto px-4">
           <motion.div
